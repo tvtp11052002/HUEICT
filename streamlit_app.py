@@ -18,7 +18,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 # For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
 
 import os
-
+os.system('sudo pip install scikit-learn')
 import pip
 pip.main(['install','seaborn'])
 
