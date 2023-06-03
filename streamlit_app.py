@@ -19,6 +19,9 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
 import os
 
+import pip
+pip.main(['install','seaborn'])
+
 df =  pd.read_csv("results.csv")
 
 df["date"] = pd.to_datetime(df["date"])
