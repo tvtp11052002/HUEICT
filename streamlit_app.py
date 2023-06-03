@@ -107,7 +107,7 @@ home_team.columns = [h.replace("home_", "").replace("_home", "").replace("away_"
 
 away_team.columns = [a.replace("away_", "").replace("_away", "").replace("home_", "suf_").replace("_home", "_suf") for a in away_team.columns]
 
-team_stats = home_team.pd.concat(away_team)#.sort_values("date")
+team_stats = pd.concat([home_team,away_team])#.sort_values("date")
 
 #this column will be used to calculate features for simulation
 team_stats_raw = team_stats.copy()
