@@ -21,7 +21,7 @@ import os
 os.system('sudo pip install scikit-learn')
 import pip
 pip.main(['install','seaborn'])
-pip.main(['install','sklearn'])
+pip install sklearn
 
 df =  pd.read_csv("results.csv")
 
